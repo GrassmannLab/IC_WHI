@@ -1061,21 +1061,6 @@ table(phenotypes$ANYCANCER_AFTER)
 ```
 
 
-<table>
-<thead><tr><th></th><th scope=col>SINUSDY</th><th scope=col>ADRENALDY</th><th scope=col>ANALDY</th><th scope=col>APPENDIXDY</th><th scope=col>BASETONGUEDY</th><th scope=col>BILIARYDY</th><th scope=col>BLADDERDY</th><th scope=col>BONELIMBDY</th><th scope=col>BONENONDY</th><th scope=col>BRAINDY</th><th scope=col>⋯</th><th scope=col>URETERDY</th><th scope=col>URINARYDY</th><th scope=col>UTERINEDY</th><th scope=col>VAGINADY</th><th scope=col>VULVADY</th><th scope=col>CANCOTHERDY</th><th scope=col>MMYELOMADY</th><th scope=col>MELANOMADY</th><th scope=col>HODGKINSDY</th><th scope=col>LYMPHOMADY</th></tr></thead>
-<tbody>
-	<tr><th scope=row>143208</th><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>⋯ </td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
-	<tr><th scope=row>143209</th><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>⋯ </td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
-	<tr><th scope=row>143210</th><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>⋯ </td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
-	<tr><th scope=row>143211</th><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>⋯ </td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
-	<tr><th scope=row>143212</th><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>⋯ </td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
-	<tr><th scope=row>143213</th><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>⋯ </td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
-</tbody>
-</table>
-
-
-
-
     
          0      1      2      3      4 
     141794    802    195     19      5 
@@ -1102,7 +1087,7 @@ phenotypes$ANYCANCER=phenotypes$ANYCANCER_BEFORE+phenotypes$ANYCANCER_AFTER
 table(f2_rel1_baseline$RACE)
 phenotypes$RACE=f2_rel1_baseline[match(phenotypes$studiepersonid, as.character(f2_rel1_baseline$SUBJID)),"RACE"]
 table(phenotypes$RACE)
-dim(phenotypes)
+
 
 ```
 
@@ -1119,9 +1104,6 @@ dim(phenotypes)
 
 
 
-<ol class=list-inline>
-	<li>142815</li>
-	<li>72</li>
-</ol>
+
 
 
