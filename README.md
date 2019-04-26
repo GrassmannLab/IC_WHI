@@ -1,6 +1,6 @@
 
 -------------------
-# Compute phenotypes for interval cancer in Women's Health Initiative 
+# Compute phenotypes in Women's Health Initiative in R
 ## Author: Dr. Felix Grassmann, Karolinska Institutet, MEB
 ## Variable and data table names as retrieved from dbGAP (accession phs0002000.v11.p3)
 ## Date: 2019-04-26
