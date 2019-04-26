@@ -1,11 +1,8 @@
-# IC_WHI
-
 
 -------------------
 # Compute phenotypes for interval cancer in Women's Health Initiative 
 # Author: Dr. Felix Grassmann
-### variable names as retrieved from dbGAP (accession phs0002000.v11.p3)
-### data table names as retrieved from dbGAP (accession phs0002000.v11.p3)
+## Variable and data table names as retrieved from dbGAP (accession phs0002000.v11.p3)
 # Date: 2018-05-16
 # Version: 1.0
 -------------------
