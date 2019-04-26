@@ -1,17 +1,15 @@
 
 -------------------
 # Compute phenotypes for interval cancer in Women's Health Initiative 
-# Author: Dr. Felix Grassmann
-# Variable and data table names as retrieved from dbGAP (accession phs0002000.v11.p3)
-# Date: 2019-04-26
-# Version: 1.0
+## Author: Dr. Felix Grassmann, Karolinska Institutet, MEB
+## Variable and data table names as retrieved from dbGAP (accession phs0002000.v11.p3)
+## Date: 2019-04-26
+## Version: 1.0
 -------------------
 
 
 ```R
 library(data.table)
-library(survival)
-library(broom)
 library(doParallel)
 registerDoParallel(cores=4)
 ```
