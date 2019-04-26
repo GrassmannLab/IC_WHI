@@ -2,8 +2,8 @@
 -------------------
 # Compute phenotypes for interval cancer in Women's Health Initiative 
 # Author: Dr. Felix Grassmann
-## Variable and data table names as retrieved from dbGAP (accession phs0002000.v11.p3)
-# Date: 2018-05-16
+# Variable and data table names as retrieved from dbGAP (accession phs0002000.v11.p3)
+# Date: 2019-04-26
 # Version: 1.0
 -------------------
 
@@ -17,12 +17,6 @@ registerDoParallel(cores=4)
 ```
 
 ## ---------------  Data sources --------------------##
-
-
-```R
-setwd("/Volumes/Work/Work/Projects/PheWAS_BC_Prognosis/data/phenotypes/WHI/raw_register_data/")
-```
-
 
 ```R
 # load data into R
@@ -165,9 +159,9 @@ phenotypes$x_BC=as.numeric(!is.na(outc_ct_os$BREASTSRC))
 ```R
 ##################################
 # x_PRESCREEN from questionair
-
 # add last screening and second to last screening and compute interval
 # only do this for women with breast cancer x_diagdate
+
 #### x_PRESCREEN
 # x_PRESCREEN: time in days from baseline to the last screening before diagnosis, use data from f33_rel4
 phenotypes$x_PRESCREEN=NA
@@ -175,7 +169,7 @@ phenotypes$x_PRESCREEN=NA
 # restrict to BC cases to speed-up the calculation
 bc_cases=phenotypes[!is.na(phenotypes$x_diagdate), "studiepersonid"]
 
-#reduce the mammo dataframe to only contain entries for samples with breast cancer. This should reduce computing time 10 fold
+# reduce the mammo dataframe to only contain entries for samples with breast cancer. This should reduce computing time 10 fold
 qmammo=qmammo[!is.na(match(qmammo$SUBJID, bc_cases)),]
 
 # only use yearly followup
