@@ -16,7 +16,7 @@ library(doParallel)
 registerDoParallel(cores=4)
 ```
 
-## ---------------  Data sources --------------------##
+## ---------------  Data sources --------------------
 
 ```R
 # load data into R
@@ -116,7 +116,7 @@ adherence=adherence[adherence$ERT2PERT!=1,]
 
 ```
 
-## ------------ Interval Cancer ------------- ##
+## ------------ Interval Cancer ------------- 
 
 
 ```R
@@ -267,7 +267,7 @@ table(phenotypes$x_intca)
     9519 1153 
 
 
-## ------------ Death ------------- ##
+## ------------ Death ------------- 
 
 
 ```R
@@ -297,7 +297,7 @@ phenotypes[(!is.na(phenotypes$dodsdatn))&(phenotypes$ulorsak==1), "x_censor_BC"]
 
 ```
 
-## ------------ Breast Cancer Severity/Aggressivity ------------- ##
+## ------------ Breast Cancer Severity/Aggressivity ------------- 
 
 
 ```R
@@ -560,7 +560,7 @@ phenotypes[,"x_invlocal"]=abs(bc_all[match(phenotypes[,"studiepersonid"], bc_all
     9291 2166 
 
 
-## ------------ Patient Phenotypes : Reproductive Health ------------- ##
+## ------------ Patient Phenotypes : Reproductive Health ------------- 
 
 
 ```R
@@ -643,7 +643,7 @@ phenotypes[which(phenotypes$HRTARM==1|phenotypes$HRTARM==3), "x_hrt"]=1
 
 ```
 
-## ------------ Patient Phenotypes : Family History ------------- ##
+## ------------ Patient Phenotypes : Family History ------------- 
 
 
 ```R
@@ -699,7 +699,7 @@ phenotypes[which(phenotypes$x_famhist_bre==1),"x_famhist_canc_noBRCA"]=NA
     45568 88613 
 
 
-## ------------ Anthropomorphic and socioeconomic traits ---------- ##
+## ------------ Anthropomorphic and socioeconomic traits ---------- 
 
 
 ```R
@@ -758,7 +758,7 @@ phenotypes[!is.na(match(phenotypes$studiepersonid, smk_cur)),"smoking_status"]=2
       1 59714  9821
 
 
-## ------------ Other Breast Cancer risk factors ---------- ##
+## ------------ Other Breast Cancer risk factors ---------- 
 
 
 ```R
@@ -1089,7 +1089,7 @@ table(phenotypes$ANYCANCER_AFTER)
 phenotypes$ANYCANCER=phenotypes$ANYCANCER_BEFORE+phenotypes$ANYCANCER_AFTER
 ```
 
-## -------- Ancestry ---- ##
+## -------- Ancestry ---- 
 
 
 ```R
